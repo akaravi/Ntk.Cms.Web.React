@@ -17,15 +17,12 @@ export const localeOptions = [{
     },
 ];
 export const cmsServerConfig = {
-    configApiServerPath: "https://apicms.ir/api/",
+    configApiServerPath: "https://apicms.ir/api/v1/",
     configMvcServerPath: "https://oco.ir",
     configCpanelImages: "/cpanelv1/images/",
-    configPathFileByIdAndName:"https://oco.ir/files/",
+    configPathFileByIdAndName:"https://oco.ir/v1/files/",
     configRouteThumbnails:"https://oco.ir/imageThumbnails/",
-    nnnnnnnnnnn:"https://apicms.ir/api/files/",
-    configRouteUploadFileContent:"https://oco.ir/api/FileContent/upload/",
-
-
+    configRouteUploadFileContent:"https://oco.ir/api/v1/FileContent/upload/",
 
 };
 export const cmsCilentConfig = {

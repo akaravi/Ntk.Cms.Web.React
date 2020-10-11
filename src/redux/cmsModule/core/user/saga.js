@@ -56,7 +56,7 @@ const getCoreUserActGetOneRequestAsync = async (Id) => {
         'Authorization': localStorage.getItem('userGlobaltoken') 
     };
   
-    return await axios.get(cmsServerConfig.configMvcServerPath + `/api/CoreUser/GetOne/`+Id, {
+    return await axios.get(cmsServerConfig.configApiServerPath + `/api/CoreUser/GetOne/`+Id, {
             headers: headers
         })
         .then(
@@ -81,7 +81,7 @@ const getCoreUserActGetAllRequestAsync = async (filterModel) => {
     const postData = {
         
     };
-    return await axios.post(cmsServerConfig.configMvcServerPath + `/api/CoreUser/Getall`, postData, {
+    return await axios.post(cmsServerConfig.configApiServerPath + `/api/CoreUser/Getall`, postData, {
             headers: headers
         })
         .then(
